@@ -1,0 +1,36 @@
+ #*模板使用方法
+ 1、此模板使用Velocity语法；
+ 2、模板类型为“TPL_TYPE_TABLE”需使用table作为引用对象，模板类型为“TPL_TYPE_MODEL”的需使用model作为引用对象；
+ 3、此软件内置了一些功能函数，需用fun进行引用，目前支持函数列模型如下，如需新的函数功能，请联系作者：
+    fun.lFormat(String code):将输出参数为下划线分隔的字符串中的下划线去掉，第一个词的首字母小写，其余分隔词的首字母大写；
+    fun.uFormat(String code):将输出参数为下划线分隔的字符串中的下划线去掉，第一个词的首字母大写，其余分隔词的首字母大写；
+    fun.toLangDataType(String dbdt, String lang):查找typemap模型，根据数据库的字段类型得到对应的语言的数据类型。
+    fun.lowerFirst(String str):将字符串的首字母小写，其余字母保持不变
+    fun.upperFirst(String str):将字符串的首字母大写，其余字母保持不变
+    fun.lower(String str):将字符串改为小写
+    fun.upper(String str):将字符串改为大写
+ 4、生成文件名规则的设置也使用Velocity语法，可以在文件名规则中使用子目录规则，文件路径分隔符可以用"${sep}"，也可以直接用反斜杠"/"
+  *#
+
+//模型名
+${model.name} $model.name
+
+//遍历全部表
+#foreach($table in $model.tables)
+第${count}个表：表名：${table.name} 	表CODE：${table.code} 
+#end
+
+//遍历已选择的表
+#foreach($table in $model.selectedTables)
+第${count}个表：表名：${table.name} 	表CODE：${table.code} 
+#end
+
+//模型里所有外键
+#if ($model.refs.size() > 0)
+#foreach ($ref in $model.refs)
+	子表：CODE=${ref.childTable.code}，名称=${ref.childTable.name}   //ref.childTable得到子模型
+	父表：CODE=${ref.parentTable.code}，名称=${ref.parentTable.name} //ref.parentTable得到父模型
+	子表的列：CODE=${ref.childColumn.code}，名称=${ref.childColumn.name}
+	父表的列：CODE=${ref.parentColumn.code}，名称=${ref.parentColumn.name}
+#end
+#end

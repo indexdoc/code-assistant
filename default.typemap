@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TypeMap>
+  <Row DataBase="ORACLE" DataBase_DataType="VARCHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="VARCHAR2" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="CHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="FLOAT" Lang="JAVA" Lang_DataType="Double" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="NUMBER" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="DATE" Lang="JAVA" Lang_DataType="Timestamp" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="TIMESTAMP" Lang="JAVA" Lang_DataType="java.sql.Timestamp" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="VARCHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="CHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BLOB" Lang="JAVA" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TEXT" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="INTEGER" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TINYINT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="SMALLINT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="MEDIUMINT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BIT" Lang="JAVA" Lang_DataType="Boolean" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BIGINT" Lang="JAVA" Lang_DataType="BigInteger" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="FLOAT" Lang="JAVA" Lang_DataType="Float" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DOUBLE" Lang="JAVA" Lang_DataType="Double" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DECIMAL" Lang="JAVA" Lang_DataType="BigDecimal" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BOOLEAN" Lang="JAVA" Lang_DataType="Boolean" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BOOL" Lang="JAVA" Lang_DataType="Boolean" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="ID" Lang="JAVA" Lang_DataType="Long" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DATETIME" Lang="JAVA" Lang_DataType="Timestamp" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TIMESTAMP" Lang="JAVA" Lang_DataType="Timestamp" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="INT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="INT IDENTITY" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="BIGINT" Lang="JAVA" Lang_DataType="Long" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="BINARY" Lang="JAVA" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="BIT" Lang="JAVA" Lang_DataType="Boolean" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="CHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="DATETIME" Lang="JAVA" Lang_DataType="java.sql.Timestamp" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="DECIMAL" Lang="JAVA" Lang_DataType="BigDecimal" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="FLOAT" Lang="JAVA" Lang_DataType="Double" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="IMAGE" Lang="JAVA" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="MONEY" Lang="JAVA" Lang_DataType="BigDecimal" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="NCHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="NTEXT" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="NUMERIC" Lang="JAVA" Lang_DataType="BigDecimal" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="NVARCHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="REAL" Lang="JAVA" Lang_DataType="Float" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="SMALLDATETIME" Lang="JAVA" Lang_DataType="java.sql.Timestamp" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="SMALLINT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="SMALLMONEY" Lang="JAVA" Lang_DataType="BigDecimal" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="SQL_VARIANT" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="TEXT" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="TIMESTAMP" Lang="JAVA" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="TINYINT" Lang="JAVA" Lang_DataType="Integer" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="UNIQUEIDENTIFIER" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="VARBINARY" Lang="JAVA" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="SQL SERVER" DataBase_DataType="VARCHAR" Lang="JAVA" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="VARCHAR2" Lang="JDBC_RESULTSET" Lang_DataType="String" Remark="特殊类型转换"/>
+  <Row DataBase="ORACLE" DataBase_DataType="VARCHAR" Lang="JDBC_RESULTSET" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="CHAR" Lang="JDBC_RESULTSET" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="FLOAT" Lang="JDBC_RESULTSET" Lang_DataType="Double" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="NUMBER" Lang="JDBC_RESULTSET" Lang_DataType="Int" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="DATE" Lang="JDBC_RESULTSET" Lang_DataType="Date" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="TIMESTAMP" Lang="JDBC_RESULTSET" Lang_DataType="Timestamp" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="VARCHAR" Lang="ACTIONSCRIPT" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="CHAR" Lang="ACTIONSCRIPT" Lang_DataType="String" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="FLOAT" Lang="ACTIONSCRIPT" Lang_DataType="Number" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="NUMBER" Lang="ACTIONSCRIPT" Lang_DataType="int" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="DATE" Lang="ACTIONSCRIPT" Lang_DataType="Date" Remark=""/>
+  <Row DataBase="ORACLE" DataBase_DataType="TIMESTAMP" Lang="ACTIONSCRIPT" Lang_DataType="Date" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="CHAR" Lang="C#" Lang_DataType="string" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="VARCHAR" Lang="C#" Lang_DataType="string" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BLOB" Lang="C#" Lang_DataType="byte[]" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TEXT" Lang="C#" Lang_DataType="string" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="INTEGER" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TINYINT" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="SMALLINT" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="MEDIUMINT" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BIT" Lang="C#" Lang_DataType="bool" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BIGINT" Lang="C#" Lang_DataType="long" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="FLOAT" Lang="C#" Lang_DataType="float" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DOUBLE" Lang="C#" Lang_DataType="double" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DECIMAL" Lang="C#" Lang_DataType="decimal" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BOOLEAN" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="BOOL" Lang="C#" Lang_DataType="int" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="ID" Lang="C#" Lang_DataType="long" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DATE" Lang="C#" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TIME" Lang="C#" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="DATETIME" Lang="C#" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="TIMESTAMP" Lang="C#" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="MYSQL" DataBase_DataType="YEAR" Lang="C#" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TEXT" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="String" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="VARCHAR" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="String" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="CHAR" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="String" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="FLOAT" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Float64" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DOUBLE" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Float64" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="NUMERIC" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Decimal128(8)" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="MONEY" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Decimal128(2)" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DECIMAL" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Decimal128(8)" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATE" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="ARRAY" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Array" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="JSON" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="String" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BOOL" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="UInt8" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SMALLINT" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Int16" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SERIAL" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="UInt32" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT8" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Int64" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT4" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Int64" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT2" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="Int64" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATETIME" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BYTEA" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="String" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMPTZ" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMP" Lang="CLICKHOUSE_DATATYPE" Lang_DataType="DateTime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TEXT" Lang="PYTHON" Lang_DataType="str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="VARCHAR" Lang="PYTHON" Lang_DataType="str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="CHAR" Lang="PYTHON" Lang_DataType="str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="FLOAT" Lang="PYTHON" Lang_DataType="float" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DOUBLE" Lang="PYTHON" Lang_DataType="float" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="NUMERIC" Lang="PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="MONEY" Lang="PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DECIMAL" Lang="PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATE" Lang="PYTHON" Lang_DataType="datetime.datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="ARRAY" Lang="PYTHON" Lang_DataType="list" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="JSON" Lang="PYTHON" Lang_DataType="str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BOOL" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SMALLINT" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SERIAL" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT8" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT4" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT2" Lang="PYTHON" Lang_DataType="int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATETIME" Lang="PYTHON" Lang_DataType="datetime.datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BYTEA" Lang="PYTHON" Lang_DataType="str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMPTZ" Lang="PYTHON" Lang_DataType="datetime.datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMP" Lang="PYTHON" Lang_DataType="datetime.datetime" Remark=""/>
+
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TEXT" Lang="STR2PYTHON" Lang_DataType="object_to_str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="VARCHAR" Lang="STR2PYTHON" Lang_DataType="object_to_str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="CHAR" Lang="STR2PYTHON" Lang_DataType="object_to_str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="FLOAT" Lang="STR2PYTHON" Lang_DataType="str_to_float" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DOUBLE" Lang="STR2PYTHON" Lang_DataType="str_to_float" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="NUMERIC" Lang="STR2PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="MONEY" Lang="STR2PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DECIMAL" Lang="STR2PYTHON" Lang_DataType="decimal.Decimal" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATE" Lang="STR2PYTHON" Lang_DataType="str_to_datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="ARRAY" Lang="STR2PYTHON" Lang_DataType="list" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="JSON" Lang="STR2PYTHON" Lang_DataType="object_to_str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BOOL" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SMALLINT" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="SERIAL" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT8" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT4" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="INT2" Lang="STR2PYTHON" Lang_DataType="str_to_int" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="DATETIME" Lang="STR2PYTHON" Lang_DataType="str_to_datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="BYTEA" Lang="STR2PYTHON" Lang_DataType="object_to_str" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMPTZ" Lang="STR2PYTHON" Lang_DataType="str_to_datetime" Remark=""/>
+  <Row DataBase="POSTGRESQL" DataBase_DataType="TIMESTAMP" Lang="STR2PYTHON" Lang_DataType="str_to_datetime" Remark=""/>
+
+</TypeMap>

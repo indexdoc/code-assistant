@@ -1,0 +1,29 @@
+##测试 email
+ 
+ $mail.senderName message notification
+ Sender       :   $mail.senderName<$mail.senderMail>        
+ Date         :   $mail.date
+ Receiver     :   $mail.receiverName<$mail.receiverMail>
+ 
+ Dear $mail.receiverMail:
+ $mail.senderName send a message notification as following:
+ 
+ ##测试函数调用
+ #${mail.testfunction($mail.date)};
+ 
+  $mail.testfunction("date is ",$mail.date);
+ 
+ ${fun.lFormat($mail.senderName)}
+ ${fun.uFormat($mail.senderName)}
+ 
+ #if($mail.testboolean())
+  it is true;
+ #else
+  it is false;
+ #end
+ 
+ $mail.content
+ 
+ please quick login the $mail.senderWebSite message center and have a look.
+ 
+                                                       $mail.senderName Team

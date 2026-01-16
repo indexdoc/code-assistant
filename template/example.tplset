@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TplSet OutPath="E:\Workspaces\CodeAsst\CodeAsst\output">
+  <tpl Name="Example_Table.vtl" Type="TPL_TYPE_TABLE" NameRegular="txt/${fun.uFormat(${table.code})}_example.txt" Path="E:\Workspaces\CodeAsst\CodeAsst\template" Checked="true" Remark="单表模板，使用VELOCITY模板引擎"/>
+  <tpl Name="Example_Model.vtl" Type="TPL_TYPE_MODEL" NameRegular="${model.name}_example.txt" Path="E:\Workspaces\CodeAsst\CodeAsst\template" Checked="true" Remark="模型（多表的集合）模板，使用VELOCITY模板引擎"/>
+</TplSet>
