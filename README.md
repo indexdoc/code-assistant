@@ -11,40 +11,31 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10+-green.svg)](https://www.python.org/) [![GitHub Stars](https://img.shields.io/github/stars/indexdoc/indexdoc-model-to-code?style=social)](https://github.com/indexdoc/indexdoc-model-to-code)
 
-## 1 📝 软件授权方式
-此软件采用**共享软件**授权方式，未注册用户在功能使用上会受到限制。
 
-- **注册费用**：初次注册费用为 960 元，有效期 1 年；后续每年续费费用为 180 元。
-- **授权限制**：每份注册软件仅允许在同一台机器上安装。若更换电脑或进行硬件升级，请联系技术支持处理。
-- **购买渠道**：
-  1.  前往 [软行天下网站](http://www.sharebank.com.cn/) 购买
-  2.  直接联系作者（邮箱：Jooze@qq.com）咨询购买事宜
-- **注册码发放**：购买后 24 小时内，用户将收到软件注册码，续费相关事宜请直接联系作者。
-
-## 2 ✨ 代码生成流程
+## 1 ✨ 代码生成流程
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/codeGenerationProcess.png)
 - **数据模型**：用数据模型工具生成的文件，CodeAsst支持PowerDesigner生成的PDM文件（需要安装PowerDesigner15.3以上版本）和Oracle、MySQL、MS SQL Server、PostgreSQL等四种数据库的表模型。
 - **代码模板**：用户自定义的模板文件，一般是根据已有代码，将其中需要数据模型替换的内容用CodeAsst自定义的变量进行替换。
 - **数据类型映射**：从数据模型到编程语言之间的数据类型映射关系，比如Oracle的Varchar2对应Java中的String。
 - **代码生成**：数据模型+代码模板，通过数据类型映射关系生成代码。
 
-## 3 🚀 代码生成操作
-### 3.1 系统主页面
+## 2 🚀 代码生成操作
+### 2.1 系统主页面
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/mainPage.png)
-### 3.2 “数据类型映射”界面
+### 2.2 “数据类型映射”界面
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/dataTypeMapping.png)
 
 数据类型映射关系可以保存在文件中，CodeAsst有一个默认的数据类型映射文件default.typemap，用户可以编辑自己的数据类型映射文件。
-### 3.3 “编辑模板”界面
+### 2.3 “编辑模板”界面
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/editTemplate.png)
 
 CodeAsst支持模板集，一个模板集包括多个模板，比如你可以定义Java程序的模板集，也可以定义一个.NET程序的模板集。
-#### 3.3.1 新建模板
+#### 2.3.1 新建模板
 点击“新建模板”按钮可以新建一个模板文件，在这个界面中可以导入已有的模板文件的内容。
 模板类型有两种：面向单个表的TPL_TYPE_TABLE和面向整个数据模型的TPL_TYPE_MODEL。TPL_TYPE_TABLE适合于对单表的增删查改操作的代码模板，TPL_TYPE_MODEL适合于面向多个表的操作文件。
 
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/newTemplate.png)
-#### 3.3.2 TPL_TYPE_TALBE模板使用说明
+#### 2.3.2 TPL_TYPE_TALBE模板使用说明
 此模板通过内置变量table获取数据模型中的一个table的相关属性。
 模板的注释使用“#*”“*#”，此两者之间包括的内容的生成代码时会略掉。
 ```bush
@@ -147,7 +138,7 @@ ${fun.uFormat($table.code)}
 #end
 #end
 ```
-#### 3.3.3 TPL_TYPE_MODEL模板使用说明
+#### 2.3.3 TPL_TYPE_MODEL模板使用说明
 此模板通过内置变量model获取数据模型中的相关属性。
 模板的注释使用“#*”“*#”，此两者之间包括的内容的生成代码时会略掉。
 ```bush
@@ -223,24 +214,24 @@ ${model.name} $model.name
  
 
 ```
-#### 3.3.4 模板文件命名规则
+#### 2.3.4 模板文件命名规则
 每个模板可以自定义一个模板生成文件的命名规则
 模板类型为TPL_TYPE_TABLE 的命名规则可以使用内置变量table进行定义，同时支持内置函数和子目录，例如表USER_BOOK对应命名规则为“txt/${fun.uFormat(${table.code})}_example.txt”，则生成的文件为目录txt下的“UserBook_example.txt”。
 类似，模板类型为TPL_TYPE_MODEL的命名规则使用内置变量model进行定义。
-#### 3.3.5 模板集
+#### 2.3.5 模板集
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/templateSet.png)
-#### 3.3.6 模板内容
+#### 2.3.6 模板内容
 模板内容可以直接在CodeAsst中进行编辑，也可以使用自己熟悉的文本编辑器编辑。
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/modelSet.png)
-### 3.4 “打开数据模型”界面
+### 2.4 “打开数据模型”界面
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/openDataModel.png)
-#### 3.4.1 打开PDM文件
+#### 2.4.1 打开PDM文件
 需要安装PowerDesigner15.3及以上版本，用户在文件选择对话框中选择了PDM文件后，CodeAsst会打开PowerDesigner获取PDM文件中的数据模型信息。
-#### 3.4.2 使用已打开的PDM文件
+#### 2.4.2 使用已打开的PDM文件
 需要安装PowerDesigner15.3及以上版本，CodeAsst会自动连接PowerDesigner获取用户已经打开的PDM文件。
-#### 3.4.3 打开XML文件
+#### 2.4.3 打开XML文件
 CodeAsst自定义了自己的数据模型XML文件，用户可以自行编辑XML文件以定义自己的数据模型。在“选择表模型”的界面中，用户可以将已打开的数据模型导出为XML文件进行编辑。
-#### 3.4.4 连接ORACLE、MySQL、Sql Server、PostgreSQL数据库
+#### 2.4.4 连接ORACLE、MySQL、Sql Server、PostgreSQL数据库
 点了相应按钮后，会弹出连接数据库的对话框，在输入JDBC的连接地址、用户名和密码后，点“连接”按钮获取数据库的用户列表。
 
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/connectDatabase.png)
@@ -248,12 +239,12 @@ CodeAsst自定义了自己的数据模型XML文件，用户可以自行编辑XML
 在选中的用户名中选择一个，点确定后，CodeAsst会读取此用户下的所有表的属性结构信息，可能会花费几分钟时间完成相应操作。
 
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/choseDatabase.png)
-### 3.5 “选择表模型”界面
+### 2.5 “选择表模型”界面
 在数据模型已打开的情况下，在“选择表模型”界面可以查看并选择需要生成代码的表模型。
 同时，可以将数据模型导出为XML文件（后缀名为.model.xml）。
 
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/choseTableModel.png)
-### 3.6 代码生成
+### 2.6 代码生成
 在代码模板已经确认，数据模型已经确认的情况下，可以打开“代码生成”界面。
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/codeProduce.png)
 
@@ -263,8 +254,8 @@ CodeAsst自定义了自己的数据模型XML文件，用户可以自行编辑XML
 
 非授权用户仅能生成3个文件。
 
-## 4 📝 附录
-### 4.1 内置函数列表
+## 3 📝 附录
+### 3.1 内置函数列表
 ```bush
 fun.lFormat(String code):将输出参数为下划线分隔的字符串中的下划线去掉，第一个词的首字母小写，其余分隔词的首字母大写；
 
@@ -286,8 +277,8 @@ fun.toLangDataType(String dbdt, String lang):查找数据类型映射表，根�
 
 ${fun.uFormat($table.code)}
 ```
-### 4.2 内置变量列表
-#### 4.2.1 TPL_TYPE_TABLE类型的模板
+### 3.2 内置变量列表
+#### 3.2.1 TPL_TYPE_TABLE类型的模板
 TPL_TYPE_TALBE类型的模板以table作为主变量获取选中的表的字段信息。
 ```bush
 l 表名：table.name
@@ -348,7 +339,7 @@ l 外键:table.refs
 
 #end
 ```
-#### 4.2.2 TPL_TYPE_MODEL类型模板
+#### 3.2.2 TPL_TYPE_MODEL类型模板
 ```bush
 l 模型名：model.name
 
@@ -387,31 +378,30 @@ l 模型中的外键集合：model.refs
 #end
 
 ```
-### 4.3 模板样例
-#### 4.3.1 模板集合
+### 3.3 模板样例
+#### 3.3.1 模板集合
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/modelSet.png)
-#### 4.3.2 模板内容
+#### 3.3.2 模板内容
 模板内容可以直接在CodeAsst中进行编辑，也可以使用自己熟悉的文本编辑器编辑。
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/templateContent.png)
-### 4.4 数据类型映射文件样例
+### 3.4 数据类型映射文件样例
 CodeAsst自带了一个数据类型映射文件default.typemap，用户可以根据自己需要进行新增和修改。
 ![生成的文件示例](https://github.com/indexdoc/indexdoc-model-to-code/raw/main/dataTypeMapping.png)
-### 4.5 数据模型XML文件说明
+### 3.5 数据模型XML文件说明
 CodeAsst自定义了数据模型的XML语法，用户可以用PowerDesigner编辑数据模型后导出为XML文件，然后用文本编辑器看看文件格式。
-## 5 🔧常见问题
+## 4 🔧常见问题
 - 支持PowerDesigner的哪几个版本：目前测试过PowerDesigner15.3和16.1。低于15.3的PowerDesigner版本本软件无法支持。如果有发现高于15.3的软件版本支持不了的，请和作者联系处理。
 
 - 支持哪些数据库系统：理论上所有关系型数据库系统都可以支撑，目前测试过Oracle、MySQL、Sql Server、PostgreSQL四种数据库系统。如果有需要支持其它数据库系统，请和作者联系。
 
 - 可以定制化开发么：当然可以，请和作者联系，根据定制化开发的工作量进行收费。
 
-- 如何联系作者和技术支持：购买了本软件后可以获得作者的技术支持。联系邮箱和QQ为：Jooze@qq.com。
 
-## 6 📞 联系方式
+## 5 📞 联系方式
 
 - 作者：杭州智予数信息技术有限公司
 
-- 邮箱：indexdoc@qq.com、Jooze@qq.com
+- 邮箱：indexdoc@qq.com
 
 - 官方网站：https://www.indexdoc.com/
 
