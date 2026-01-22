@@ -1,3 +1,8 @@
+<div align="center">
+  <strong>English</strong> | <a href="README.md">简体中文</a>
+</div>
+
+---
 # CodeAsst - Code Generation Assistant
 CodeAsst is a powerful code generation tool built on the core principle of **Data Model + Template = Code**. It helps development teams and individual developers achieve batch, standardized code generation, significantly improving development efficiency.
 
