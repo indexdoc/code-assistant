@@ -1,3 +1,8 @@
+<div align="center">
+  <a href="README_EN.md">English</a> | <strong>简体中文</strong>
+</div>
+
+---
 # CodeAsst 编码助理
 编码助理（CodeAsst）是一款功能强大的代码生成工具，核心原理遵循 **数据模型 + 模板 = 代码** 的设计理念，助力开发团队和个人实现批量、标准化的代码生成，大幅提升开发效率。
 
